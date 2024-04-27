@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <title>Shakeel Bashir</title>
+    <style>
+    html {
+        scroll-behavior:smooth;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: olive; /* Set a light background color */
+        background-image: linear-gradient(45deg, brown,#333);
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    header {
+        background-image: url('images/bricks.jpg');
+        color: #fff; /* Text color */
+        padding: 20px 0; /* Padding for top and bottom */
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    h1 {
+        background-color: rgba(128, 78, 54, 0.7);
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 36px; 
+        font-weight: bold; 
+        color: black;
+        text-align: center; 
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    h2{
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 36px; 
+        font-weight: bold; 
+        color: #808000;
+        text-align: center; 
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    ol {
+        list-style-type: none; /* Remove default numbering style */
+    }
+
+    ol li {
+        position: relative;
+        padding-left: 20px; /* Add space for custom bullet point */
+    }
+
+    ol li::before {
+        content: '•'; /* Use a custom bullet point */
+        position: absolute;
+        left: 0;
+    }
+    
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    audio {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .scroll-box {
+        max-height:400px;
+        overflow-y:scroll;
+        padding:10px;
+        border: 2px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-color: #f9f9f9;
+    }
+    .scroll-box li {
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+        color:#333;
+        margin-bottom:10px;
+    }
+    .scroll-box li::before {
+        content:'•';
+        margin-right:10px;
+        color:#ff6600;
+    
+    }
+    .container{
+        background-color: navajowhite;
+        color: #333;
+        padding 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.1);
+        border: 4px solid #ff6600;
+        transition: transform 0.3s ease;
+    }
+    img:hover {  
+        transform: scale(1.05);
+    }
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .image-container {
+        margin-bottom: 20px;
+    }
+
+    .basketball-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Adjust the gap between basketball images */
+    }
+    audio {
+        width: 200px; /* Set a fixed width for the audio player */
+        margin: 20px auto; /* Center the audio player */
+        background-color: #566b2f; /* Background color */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    
+        
+    }
+
+    audio::-webkit-media-controls-panel {
+        border-radius: 8px; /* Rounded corners for media controls */
+    }
+
+    audio::-webkit-media-controls-play-button {
+        background-color: #ff6600; /* Custom color for play button */
+        border-radius: 50%; /* Make the play button circular */
+        width: 36px; /* Set a fixed width for the play button */
+        height: 36px; /* Set a fixed height for the play button */
+        display: block; /* Ensure the play button is visible */
+        margin: auto; /* Center the play button */
+    }
+    audio::-webkit-media-controls-timeline {
+        background-color: #556b2f; /* Olive green background color for the timeline */
+        height: 4px; /* Adjust the height of the timeline */
+    }
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display {
+        color: orange; /* White color for the time display */
+        font-size: 14px; /* Adjust the font size of the time display */
+        font-family: Arial, sans-serif; /* Specify the font family for the time display */
+    }
+    .special-image{
+        border: 4px solid #057e07;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        width: 600px;
+        text-align: center;
+    }
+    .special-image:hover{
+        transform: scale(1.05);
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shakeel Bashir</h1>
+    </header>
+    <div class="container">
+        <h2>About Me!</h2>
+        <img src="images/selfie.jpg" alt="Shakeel Bashir" width="200" height="200">
+        <p>Welcome to my personal website! Here's a little bit about me:</p>
+        <ul class ="scroll-box">
+            <li>
+                <strong>Location:</strong> Los Angeles, California
+            </li>
+            <li>
+                <strong>Coding:</strong> I started my coding journey with a lot of enthusiasm but also with a realization that mastering coding takes time and dedication. While I haven't reached the level of mastery I aspire to, I'm deeply passionate about learning and improving my coding skills every day. I believe that coding is not just about writing lines of code; it's about problem-solving, creativity, and continuous learning. I'm committed to exploring new technologies, tackling challenging problems, and building projects that push me out of my comfort zone. Every coding challenge I encounter is an opportunity to grow and become a better developer. I'm excited about the endless possibilities that coding offers and I'm determined to make the most of them.
+            </li>
+            
+                <li>
+                    <strong>Hobbies:</strong> Ever since I can remember, I've had a passion for collecting sneakers. It's not just about the shoes themselves, but the stories and culture that surround them. Each pair in my collection represents a unique design, a moment in sneaker history, or a personal memory. Building my shoe collection has become more than just a hobby; it's a journey of exploration and discovery. My favorite brand, <a href="https://www.nike.com/">Nike</a>, has played a significant role in shaping my passion for sneakers. Their innovative designs, commitment to quality, and influence on sneaker culture resonate with me on a deep level. Whether it's hunting for rare releases, learning about the latest trends, or connecting with other sneaker enthusiasts, I'm constantly immersed in the world of sneakers. It's a hobby that brings me joy, inspiration, and endless opportunities for creativity.
+                </li>
+                
+            </li>
+            <li>
+                <strong>Interests:</strong> Delving into the world of documentaries is one of my greatest pleasures. There's something captivating about the way they shed light on different aspects of life, from history and science to art and culture. Documentaries serve as windows into the human experience, allowing me to explore new perspectives, gain insights into diverse cultures, and deepen my understanding of the world around me. Whether it's unraveling the mysteries of the universe, unraveling the complexities of human behavior, or unraveling the rich tapestry of global history, documentaries offer a wealth of knowledge and inspiration. I find myself drawn to topics that challenge conventional wisdom, spark meaningful conversations, and ignite my curiosity. From thought-provoking true crime stories to eye-opening nature documentaries, there's always something new to discover and learn. It's a journey of enlightenment and discovery that never fails to fascinate and inspire me.
+            </li>
+            <li>
+                <strong>Fun Fact:</strong> When I'm not immersed in the world of coding and documentaries, you can often find me on the basketball court, dribbling, shooting hoops, and enjoying the thrill of the game. Basketball has been a passion of mine since childhood, and it's more than just a sport to me—it's a source of joy, camaraderie, and personal growth. Whether I'm playing a pickup game with friends or shooting hoops alone, the rhythmic sound of the ball bouncing, the adrenaline rush of making a shot, and the sense of teamwork and competition all combine to create an exhilarating experience. Basketball not only keeps me active and fit but also teaches me valuable lessons about discipline, perseverance, and teamwork. It's a sport that brings people together, transcending barriers of age, background, and culture, and fostering connections that last a lifetime. So, the next time you see me with a basketball in hand, feel free to join in the fun and shoot some hoops together!
+            </li>
+        </ul>
+
+        <h2>Interests</h2>
+    <ol class="interests-list">
+        <li>Learning coding at <a href="https://www.nucamp.co/">Nucamp</a></li>
+        <div class="image-container">
+            <img class="special-image" src="images/matrix.webp" alt="picture of the matrix" width="100" height="200">
+        </div>
+        <li>Listening to music</li>
+        <div class="image-container">
+            <img src="images/guitars.jpg" alt="picture of guitars" width="100" height="200" class="special-image">
+        </div>
+        <li>Going to the movies</li>
+        <div class="image-container">
+            <img src="images/theater.jpg" alt="picture of movie theater" width="100" height="200" class="special-image">
+        </div>
+        <li>Playing basketball</li>
+        <div class="basketball-container">
+            <img src="images/download.jpg" alt="picture of a basketball" width="100" height="200">
+            <img src="images/download.jpg" alt="picture of a basketball" width="100" height="200">
+        </div>
+    </ol>
+
+
+    <h2>Audio</h2>
+    <audio controls src="audio/cello.mp3" controls loop>
+    </audio>
+</body>
+</html>
